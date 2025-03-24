@@ -101,7 +101,7 @@ function App() {
             <div className="flex flex-col items-center">
               <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="../public/images/not-in-call.png"
+                  src="../images/not-in-call.png"
                   alt="Not in call status"
                   className="w-full h-full object-cover"
                 />
@@ -114,7 +114,7 @@ function App() {
             <div className="flex flex-col items-center">
               <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="../public/images/unmuted.png"
+                  src="../images/unmuted.png"
                   alt="Unmuted status"
                   className="w-full h-full object-cover"
                 />
@@ -127,7 +127,7 @@ function App() {
             <div className="flex flex-col items-center">
               <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="../public/images/muted.png"
+                  src="../images/muted.png"
                   alt="Muted status"
                   className="w-full h-full object-cover"
                 />
