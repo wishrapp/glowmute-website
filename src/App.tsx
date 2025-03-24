@@ -19,7 +19,7 @@ function App() {
           {/* Hero Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2070&q=80"
+              src="https://images.unsplash.com/photo-1573497161249-42447f9f6706?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Modern conference room"
               className="w-full h-[600px] object-cover brightness-[0.85]"
             />
@@ -80,6 +80,61 @@ function App() {
                 <h3 className="text-lg font-semibold text-gray-900">Universal Support</h3>
                 <p className="mt-2 text-gray-600">Works with all major video conferencing systems and DSPs.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Status Indicator Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Clear Visual Indicators
+            </h2>
+            <p className="mt-4 text-lg text-gray-500">
+              Instantly recognize your meeting status with our intuitive LED system
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="../public/images/not-in-call.png"
+                  alt="Not in call status"
+                  className="w-full h-full object-cover"
+                />
+
+              </div>
+              <h3 className="mt-6 text-xl font-medium text-gray-900">Not In Call</h3>
+              <p className="mt-2 text-center text-gray-500">White border indicates no active meeting</p>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="../public/images/unmuted.png"
+                  alt="Unmuted status"
+                  className="w-full h-full object-cover"
+                />
+
+              </div>
+              <h3 className="mt-6 text-xl font-medium text-gray-900">Unmuted</h3>
+              <p className="mt-2 text-center text-gray-500">Green border shows your mic is active</p>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="../public/images/muted.png"
+                  alt="Muted status"
+                  className="w-full h-full object-cover"
+                />
+
+              </div>
+              <h3 className="mt-6 text-xl font-medium text-gray-900">Muted</h3>
+              <p className="mt-2 text-center text-gray-500">Red border indicates your mic is muted</p>
             </div>
           </div>
         </div>
@@ -146,38 +201,35 @@ function App() {
           <div className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-3">
             <PricingCard
               size="43-55"
-              price={149}
-              description="Perfect for small to medium conference rooms"
+              price={199}
+              description="Perfect for small to medium rooms"
               features={[
                 "Single display solution",
                 "Easy installation",
-                "Web configuration interface",
-                "1-year warranty"
+                "Web configuration interface"
               ]}
             />
             
             <PricingCard
               size="65-75"
-              price={199}
+              price={299}
               description="Ideal for medium to large conference rooms"
               features={[
-                "Single or dual display option",
-                "Premium LED strips",
-                "Extended coverage",
-                "2-year warranty"
+                "Single display solution",
+                "Easy installation",
+                "Web configuration interface"
               ]}
               popular={true}
             />
             
             <PricingCard
               size="86-98"
-              price={249}
+              price={399}
               description="Perfect for large boardrooms"
               features={[
-                "Dual display ready",
-                "Professional installation available",
-                "Extended LED coverage",
-                "3-year warranty"
+                "Single display solution",
+                "Easy installation",
+                "Web configuration interface"
               ]}
             />
           </div>
